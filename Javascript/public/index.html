@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="control-panel">
+    <H3>Room Settings</H3>
+
+    <label for="anch2"> Anchor #2: </label>
+    <div>
+      <input id="anch2_X" placeholder="X medida en M" onkeypress='validate(event)' value="2.40" />
+      <input id="anch2_Y" placeholder="Y medida en M" onkeypress='validate(event)' value="0" />
+    </div>
+    <label for="anch3"> Anchor #3: </label>
+    <div>
+      <input id="anch3_X" placeholder="X medida en M" onkeypress='validate(event)' value="2.40" />
+      <input id="anch3_Y" placeholder="Y medida en M" onkeypress='validate(event)' value="1.20" />
+    </div>
+    <label for="anch4"> Anchor #4: </label>
+    <div>
+      <input id="anch4_X" placeholder="X medida en M" onkeypress='validate(event)' value="0" />
+      <input id="anch4_Y" placeholder="Y medida en M" onkeypress='validate(event)' value="1.20" />
+    </div>
+    <button type="button" onclick="saveSettings()">Guardar Configuración</button>
+    
+    <div id="buttons">
+    </div>
+
+
+  </div>
+
+  <div id='room'>
+    <div id="container">
+    </div>
+  </div>
+
+  <script src="socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "this is a API Restful to get decaWave readings",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "decaWave",
+    "Node",
+    "Serial",
+    "Port"
+  ],
+  "author": "jdamador",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "serialport": "^8.0.7",
+    "socket.io": "^2.3.0",
+    "ws": "^7.2.1"
+  }
+}
